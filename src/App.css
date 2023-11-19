@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', 'sans-serif';
+}
+
+.App,
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #0B2434;
+}
+
+/* Styling Game Component */
+
+.game{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 3em;
+  padding: 0;
+  background-color: #F5F5F5;
+  height: 500px;
+  border-radius: 5px;
+  width: 85vw;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title-container{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-container > p{
+  font-weight: 600;
+  color: #0B2434;
+}
+
+.dice-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.dice{
+  padding: 10px 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.dice > h2{
+  padding: 0;
+  line-height: 0;
+}
+
+@media screen and (max-width:500px) {
+  .dice-container{
+    gap: 15px;
+  }
+  .dice{
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.btn{
+  margin: 0;
+  padding: 15px 40px;
+  cursor: pointer;
+  background: #5035FF;
+  color: #fff;
+  font-size: 1.4rem;
+  border: none;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling Rules Component */
+
+.rules--container{
+  width: 100%;
+  background-color: #0B2434;
+  min-height: 100vh;
+}
+
+.rules{
+  margin-top: 40px;
+  flex-direction: column;
+  background-color: #ff9999;
+  padding: 60px;
+}
+
+.rules > *{
+  color: white;
+}
+
+.rules--list{
+  list-style: square;;
+  padding: 20px 10px;
+}
+
+.rules--list > li{
+  padding: 15px 0;
+  /* background-color: #ffe5e5; */
+  color: #0B2434;
+  font-size: 1.2em;
+}
+
+@media (max-width: 38em){
+  .rules{
+    padding: 30px;
+  }
+  .rules--list > li{
+    font-size: 1em;
+  }
+}
