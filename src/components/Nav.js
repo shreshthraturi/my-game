@@ -11,7 +11,7 @@ export default function Nav() {
     return (
         <header>
             <div className="logo">
-                <h1>Tenzies</h1>
+                <h1>My Game</h1>
             </div>
 
             <button 
